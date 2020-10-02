@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Skew-Text-Slide-Animation</title>
+</head>
+<body>
+	<div class="span-wrapper">
+		<div class="skew-slide-in">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Autem, ratione! Quaerat earum fugiat minus nostrum, tempore modi odit minima quae ipsa doloremque adipisci unde accusantium excepturi, eveniet explicabo nesciunt rerum.</div>
+	</div>
+
+	<div class="span-wrapper">
+		<div>
+			<div class="skew-slide-in">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Autem,</div>
+		</div>
+		<div>
+			<div class="skew-slide-in">fugiat minus nostrum, tempore modi odit minima quae ipsa</div>
+		</div>
+		<div>
+			<div class="skew-slide-in">accusantium excepturi, eveniet explicabo nesciunt rerum.</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+
+	<script>
+		const textrev = gsap.timeline();
+
+		textrev.from(".skew-slide-in", 3, {
+		    y: 400,
+		    ease: "power4.out",
+		    delay: .5,
+		    skewY: 10,
+		    stagger: {
+		        amount: .5,
+		    },
+		});
+	</script>
+</body>
+</html>

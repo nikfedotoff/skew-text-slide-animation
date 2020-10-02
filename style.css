@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.span-wrapper {
+	width: 60%;
+	overflow: hidden;
+	margin: 50px;
+}
+
+.span-wrapper > div {
+	overflow: hidden;
+}
+
+.skew-slide-in {
+	color: #fff;
+	width: 100%;
+	font-weight: bold;
+	font-size: 40px;
+}
